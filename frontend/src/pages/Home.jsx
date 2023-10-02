@@ -11,7 +11,7 @@ import BooksCard from '../components/home/BooksCard';
 const Home = () => {
   const [books, setBooks] = useState([]);
   const [loading, setLoading] = useState(false);
-  const [showType, setShowType] = useState('table');
+  const [showType, setShowType] = useState('card');
   useEffect(() => {
     setLoading(true);
     axios
@@ -45,8 +45,8 @@ const Home = () => {
         </Link>
       </div>
       {loading ? (<Spinner />)
-        : (showType === 'table' ? (<BooksTable books={books} />)
-          : (<BooksCard books={books} />))}
+        : (showType === 'card' ? (<BooksCard books={books} />)
+          : (<BooksTable books={books} />))}
     </div>
   )
 }

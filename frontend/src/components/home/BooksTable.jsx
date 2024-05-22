@@ -6,8 +6,8 @@ import { MdOutlineAddBox, MdOutlineDelete } from "react-icons/md";
 
 const BooksTable = ({books}) => {
   return (
-    <div>
-     <table className='w-full border-separate border-spacing-2'>
+    <div className='bg-orange-50  p-3 rounded-xl'>
+     <table className='w-full border-separate border-spacing-3'>
           <thead>
             <tr>
               <th className='border border-slate-600 rounded-md'>No</th>
